@@ -16,7 +16,7 @@ def search(path, word,destdir):
             with open(fp,encoding='gbk',errors="ignore") as f:
                 for line in f:
                     if word in line:
-                        shutil.copy(fp,destdir)
+                        shutil.copy(fp,destdir) #copy file to destdir
                         print(fp)
                         break
         elif os.path.isdir(fp):
